@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Impulse - About</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .form-actions {
+            margin: 0;
+            background-color: transparent;
+            text-align: center;
+        }
+
+        .mobileContent {
+            display: none;
+        }
+
+        @media only screen and (min-device-width:200px) and (max-device-width:770px) {
+            .mobileContent {
+                display: inline;
+            }
+
+            .table-responsive {
+                display: none;
+            }
+
+            .newbtn {
+                margin-top: 10%;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a658a7b479.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="width:100%">
+        <a class="navbar-brand" href="#">About</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('Homepage') }}">Home <span
+                            class=" sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('About') }}">About Application</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('Contact') }}">Contact Us</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="row">
+        <div class="col">
+            <h1 class="text-right mt-3 font-weight-bolder">Impulse</h1>
+        </div>
+        <div class="col">
+            <img src="/static/Impulse.png" class="img-fluid" alt="Responsive image" style="width: 150px; height:100px;">
+        </div>
+    </div>
+
+    <br>
+    <div class="container" style="width:100%">
+
+        <div class="card">
+            <h5 class="card-header text-center">Coronavirus Section</h5>
+            <div class="card-body">
+                <h5 class="card-title text-center">This Section Predicts whether an individual is been infected with
+                    Coronavirus or not</h5>
+
+                <div class="form-actions">
+                    <a href=" {{ url_for('Coronavirus') }}" class="btn.
